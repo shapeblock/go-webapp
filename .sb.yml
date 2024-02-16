@@ -1,0 +1,11 @@
+build_vars:
+  BP_KEEP_FILES: "assets/*:templates/*"
+
+env_vars:
+  PORT: "8080"
+  DB_PORT: "5432"
+
+services:
+  todo-db:
+    type: postgres
+    attach_as: separate_variables
